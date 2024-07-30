@@ -1,0 +1,86 @@
+.competitions {
+  padding: 20px;
+  text-align: center;
+  margin-left:100px;
+  margin-right:100px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.competitions h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.competitions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.competition-item {
+  background-color: #e6c4fd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: left;
+  transition: box-shadow 0.3s;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.competition-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.competition-item h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+}
+
+.competition-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.competition-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.competition-item a:hover {
+  text-decoration: underline;
+}
+
+.competition-item button {
+  background-color: #5d0792;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.competition-item button:hover {
+  background-color: #490669;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade-in-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
